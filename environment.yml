@@ -1,4 +1,4 @@
-name: manim
+name: manim_env
 channels:
   - defaults
   - conda-forge
@@ -14,4 +14,3 @@ dependencies:
   - opencv==3.4.2
   - pycairo==1.18.0
   - pydub==0.23.0
-  - pyreadline
