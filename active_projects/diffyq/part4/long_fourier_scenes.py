@@ -38,6 +38,13 @@ class FourierSeriesExampleWithRectForZoom(ComplexFourierSeriesExample):
         )
 
 
+class FourierOfPonnu(FourierSeriesExampleWithRectForZoom):
+    CONFIG = {
+        "file_name": "Ponnu",
+        "n_vectors": 500,
+        "rect_stroke_width": 1,
+    }
+
 class ZoomedInFourierSeriesExample(FourierSeriesExampleWithRectForZoom, MovingCameraScene):
     CONFIG = {
         "vector_config": {
@@ -123,13 +130,6 @@ class SigmaFourierSeriesExampleWithRectForZoom(FourierSeriesExampleWithRectForZo
 
 class SigmaZoomedInFourierSeriesExample(SigmaFourierSeriesExampleWithRectForZoom, ZoomedInFourierSeriesExample):
     pass
-
-class FourierOfPonnu(FourierSeriesExampleWithRectForZoom):
-    CONFIG = {
-        "file_name": "Ponnu",
-        "n_vectors": 500,
-        "rect_stroke_width": 1,
-    }
 
 class FourierOfFourier(FourierSeriesExampleWithRectForZoom):
     CONFIG = {
